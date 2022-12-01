@@ -1,3 +1,66 @@
 body {
-  background: blanchedalmond;
+  background: #ffebcd;
+}
+:root {
+--color1: #fff1e6;
+--color2:#eddcd2;
+--color3: #e8d1c5;
+--color4:#eeddd3;
+--color5:#f0efeb;
+--color6:#d4afb9;
+}  
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: var(--color2);
+  color: var(--color6);
+}                  
+* {
+  border: 1px solid #f0efeb;
+}                  
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}                  
+
+main {
+  min-height: 60vh;
+  flex-grow: 5;
+}
+
+ nav {
+  background-color: var(--color1);
+  flex-grow: 2;
+}
+
+aside {
+  background-color: var(--color3);
+  flex-grow: 1;
+}                             
+
+.right {
+  background-color: #e5e5e5;
+  float: left;
+  width: 20%;
+  padding: 15px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+/* For mobile phones: */
+[class*="aside"] {
+  width: 100%;
+}
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .aside {width: 8.33%;}
+ 
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .aside {width: 8.33%;}
 }

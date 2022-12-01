@@ -1,3 +1,58 @@
 body {
-  background: papayawhip;
+  background: #f4cc91;
 }
+:root {
+--color1: #fff1e6;
+--color2:#eddcd2;
+--color3: #e8d1c5;
+--color4:#eeddd3;
+--color5:#f0efeb;
+--color6:#d4afb9;
+}  
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  text-align: center;
+  background-color: var(--color2);
+  color: var(--color6);
+}                  
+* {
+  border: 2px solid #f0efeb;
+}                  
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
+}                  
+
+main {
+  min-height: 40vh;
+  flex-grow: 5;
+}
+
+ nav {
+  min-height: 20vh;
+  background-color: var(--color1);
+  flex-grow: 2;
+  
+}
+
+aside {
+  min-height: 20vh;
+  background-color: var(--color3);
+  flex-grow: 1;
+}  
+
+.bottom-row {
+  display: flex;
+  min-height: 20vh;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-content: flex-start;
+}              
+
+                     
+
+
