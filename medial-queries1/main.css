@@ -1,66 +1,104 @@
 body {
-  background: #ffebcd;
-}
-:root {
---color1: #fff1e6;
---color2:#eddcd2;
---color3: #e8d1c5;
---color4:#eeddd3;
---color5:#f0efeb;
---color6:#d4afb9;
-}  
-
-body {
+  background: blanchedalmond;
   margin: 0;
-  font-family: sans-serif;
-  text-align: center;
-  background-color: var(--color2);
-  color: var(--color6);
-}                  
-* {
-  border: 1px solid #f0efeb;
-}                  
-.container {
-  display: flex;
-  min-height: 100vh;
-  flex-direction: column;
-  justify-content: space-between;
-}                  
+  font-family: monospace;
+}
 
 main {
-  min-height: 60vh;
-  flex-grow: 5;
-}
-
- nav {
-  background-color: var(--color1);
-  flex-grow: 2;
-}
-
-aside {
-  background-color: var(--color3);
-  flex-grow: 1;
-}                             
-
-.right {
-  background-color: #e5e5e5;
-  float: left;
-  width: 20%;
-  padding: 15px;
-  margin-top: 7px;
+  background: blanchedalmond;
+  font-family: monospace;
   text-align: center;
+  margin-top: -26em;
+  font-family: monospace;
+  
 }
 
-/* For mobile phones: */
-[class*="aside"] {
-  width: 100%;
+
+.container > div {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100px;
+  position: relative;
+} 
+
+.grid-container > div {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(38, 165, 190);
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
 }
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .aside {width: 8.33%;}
+
+.a {
+  display: flexbox;
+  flex-direction: column;
+  background-color: rgb(120, 170, 156);
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  justify-content: space-between;
+  margin: 10px;
+  
+}
+
+.grid-a {
+    width: 300px;
+    height: 45px;
+    margin-left: 50em;
+
+}
+
+.b {
+  display: inline-flexbox;
+  flex-direction: column;
+  background-color: rgb(120, 170, 156);
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  justify-content: space-between;
+  margin: 10px;
  
 }
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .aside {width: 8.33%;}
+
+.grid-b {
+  width: 225px;
+    height: 100px;
+    margin-left: 50em;
+    margin-top: 0.5em;
+  
+}
+
+
+.c {
+  display: inline-flexbox;
+  flex-direction: column;
+  background-color:rgb(120, 170, 156);
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  width: 200px;
+  height: 50px;
+  text-align: center;
+  justify-content: space-between;
+  margin: 10px; 
+  
+}
+
+.grid-c {
+  width: 65px;
+  height: 100px;
+  margin-left: 68em;
+  margin-top: -8em;
 }
